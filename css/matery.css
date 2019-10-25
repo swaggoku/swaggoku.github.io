@@ -103,7 +103,7 @@ blockquote {
 }
 
 .line-numbers {
-    padding: 1.5rem 1.5rem 1.5rem 3.5rem !important;
+    padding: 1.5rem 1.5rem 1.5rem 3.3rem !important;
     margin: 1rem 0 !important;
     background: #272822;
     overflow: auto;
@@ -112,7 +112,7 @@ blockquote {
 }
 
 pre {
-    padding: 2.5rem 1.5rem 1.5rem 1.5rem !important;
+    padding: 1.5rem !important;
     margin: 1rem 0 !important;
     background: #272822;
     overflow: auto;
@@ -120,7 +120,14 @@ pre {
     tab-size: 4;
 }
 
-.code-area::after {
+pre::before {
+    content: "";
+    height: 16px;
+    margin-bottom: 0;
+    display: block;
+}
+
+pre::after {
     content: " ";
     position: absolute;
     border-radius: 50%;
@@ -136,7 +143,6 @@ pre {
 
 code {
     padding: 1px 5px;
-    top: 13px !important;
     font-family: Inconsolata, Monaco, Consolas, 'Courier New', Courier, monospace;
     font-size: 0.91rem;
     color: #e96900;
@@ -151,15 +157,6 @@ code {
     z-index: 1;
     filter: invert(50%);
     cursor: pointer;
-}
-
-.codecopy_notice {
-    position: absolute;
-    top: 0.7rem;
-    right: 6px;
-    z-index: 1;
-    filter: invert(50%);
-    opacity: 0;
 }
 
 .code_lang {
@@ -1179,12 +1176,15 @@ table tr:nth-child(2n), thead {
 
 .chip-container .chip {
     margin: 10px 10px;
-    padding: 19px 14px;
-    display: inline-flex;
-    line-height: 0;
+    padding: 0 14px;
+    display: inline-block;
+    height: 38px;
+    min-width: 80px;
+    line-height: 39px;
     font-size: 1rem;
     font-weight: 500;
     border-radius: 5px;
+    word-wrap: break-word;
     cursor: pointer;
     box-shadow: 0 3px 5px rgba(0, 0, 0, .12);
 }
@@ -1198,13 +1198,10 @@ table tr:nth-child(2n), thead {
     margin-left: 5px;
     margin-right: -2px;
     font-size: 0.5rem;
-    position: relative;
-    top: 1px;
 }
 
 .chip-default .tag-length {
     color: #e91e63;
-    margin-top: 1px;
 }
 
 .chip-active .tag-length {
