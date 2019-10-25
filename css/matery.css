@@ -246,11 +246,8 @@ mark {
 .container .row {
     margin-bottom: 0;
 }
-<!--
-.bg-color {
-    background-image: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
-}
--->
+
+
 
 
 .text-color {
@@ -489,7 +486,6 @@ header .go-back i {
     font-size: 3rem;
 }
 
-<!--
 @-webkit-keyframes rainbow {
     0%,
     100% {
@@ -570,7 +566,6 @@ header .go-back i {
     }
 }
 
--->
 .carousel .indicators {
     padding-bottom: 10px !important;
 }
