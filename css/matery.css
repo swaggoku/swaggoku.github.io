@@ -489,6 +489,7 @@ header .go-back i {
     font-size: 3rem;
 }
 
+<!--
 @-webkit-keyframes rainbow {
     0%,
     100% {
@@ -569,6 +570,7 @@ header .go-back i {
     }
 }
 
+-->
 .carousel .indicators {
     padding-bottom: 10px !important;
 }
